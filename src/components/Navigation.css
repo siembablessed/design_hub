@@ -1,0 +1,107 @@
+/* src/components/Navigation.css */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #f8f8f8;
+    /* border-bottom: 1px solid #ddd; */
+    position: sticky;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 4px 2px -2px #012946b3;
+  }
+  
+  .nav-section {
+    display: flex;
+    gap: 15px;
+
+    @media (min-width:200px) and (max-width: 740px) {
+      display: none;
+    }
+  }
+  
+  .nav-left,
+  .nav-right {
+    flex: 1;
+  }
+  
+  .nav-left {
+    justify-content: flex-start; /* Aligns links to the left */
+  }
+  
+  .nav-right {
+    justify-content: flex-end; /* Aligns links to the right */
+  }
+  
+  .nav-center {
+    flex: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #012946;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    color: #012946;
+    font-weight: bold;
+  }
+  
+  /* Hamburger menu styling */
+  .hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Mobile navigation styling */
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f8f8;
+  }
+  
+  .mobile-nav a {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Show hamburger menu and hide regular navigation links on mobile */
+  @media (max-width: 468px) {
+    .nav-left,
+    .nav-right,
+    .nav-center {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    .mobile-nav.open {
+      display: flex;
+    }
+  }
+  
+  .navLogo{
+    width: 50%; height: 100%;
+  }
+

@@ -1,0 +1,19 @@
+.genHeadings{
+    font-weight: bold;
+    
+}
+
+.headingTitles{
+    font-size: 40px;
+    margin-bottom: 4px;
+}
+
+.smallTitles{
+    font-size: 20px;
+    margin-bottom: 4px;
+    text-decoration: underline;
+}
+
+p{
+    margin-top: 8px;
+}
