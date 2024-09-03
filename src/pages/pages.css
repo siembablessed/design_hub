@@ -5,6 +5,10 @@
 .homeImage{
     width: 80%; height: 80%;
     margin-left: 80px;
+
+    @media (min-width:200px) and (max-width: 740px) {
+        margin: 0;
+      }
 }
 
 #home-section, #about-section{
@@ -19,13 +23,13 @@
         
         .myBtn{
             display: flex;
-            width: 150px; 
+            width: 130px; 
         }
       }
 
       .myContainer{
         .headingTitles{
-            font-size: 30px;
+            font-size: 35px;
         }
       }
 }
