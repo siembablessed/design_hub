@@ -19,13 +19,13 @@
         
         .myBtn{
             display: flex;
-            width: 180px; 
+            width: 150px; 
         }
       }
 
       .myContainer{
         .headingTitles{
-            font-size: 20px;
+            font-size: 30px;
         }
       }
 }
