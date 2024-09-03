@@ -13,25 +13,16 @@
     height: 100vh;
     align-items: center;
 
-      .myContainer{
-
-        @media (min-width:200px) and (max-width: 400px) {
-            display: grid;
-            grid-template-columns: 1fr;
-
-            .headingTitles{
-            font-size: 20px;                
-            }
-
-            .myBtn{
-                display: flex;
-                width: 90px;    
-            }
-
-          }
+    @media (min-width:200px) and (max-width: 740px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        .myBtn{
+            display: flex;
+            width: 90px;
+            
+        }
       }
-
-
 }
 
 .myBtn{
