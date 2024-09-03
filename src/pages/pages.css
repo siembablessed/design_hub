@@ -14,7 +14,7 @@
 #home-section, #about-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    min-height: 70vh;  /* Originally 100% */
     align-items: center;
 
     @media (min-width:200px) and (max-width: 740px) {
@@ -29,7 +29,9 @@
 
       .myContainer{
         .headingTitles{
-            font-size: 35px;
+            @media (min-width:300px) and (max-width: 434px) {
+                font-size: 30px;
+              }
         }
       }
 }
