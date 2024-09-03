@@ -19,8 +19,7 @@
         
         .myBtn{
             display: flex;
-            width: 90px;
-            
+            width: 90px; 
         }
       }
 }
