@@ -13,7 +13,7 @@
     height: 100vh;
     align-items: center;
 
-    @media (min-width:200px) and (max-width: 740px) {
+    /* @media (min-width:200px) and (max-width: 740px) {
         display: grid;
         grid-template-columns: 1fr;
         
@@ -22,7 +22,18 @@
             width: 90px;
             
         }
+      } */
+
+      .myContainer{
+
+        @media (min-width:200px) and (max-width: 400px) {
+            .headingTitles{
+            font-size: 9px;                
+            }
+          }
       }
+
+
 }
 
 .myBtn{
